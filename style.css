@@ -1,5 +1,53 @@
+/* >600px,  601px, 760px, 992px, 1200px BREAKPOINTSx */
+:root {
+  --font-playfair: "Playfair", serif;
+  --font-great-vibes: "Great Vibes", cursive;
+  --font-pacifico: "Pacifico", cursive;
+  --font-lora: "Lora", serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-open-sans: "Open Sans", sans-serif;
+  --font-lato: "Lato", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --h1-size: 60px;
+  --h2-size: 45px;
+  --h3-size: 30px;
+  --p-size: 16px;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+h1 {
+  font-family: var(--font-montserrat);
+  font-weight: 500;
+  font-size: var(--h1-size);
+  color: white;
+}
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.overlay {
+  /* border-width: 10px;
+  border-style: solid; */
+  /* border-image-slice: fill 1; */
+  /* border-image-source: linear-gradient(hsla(159, 68%, 35%, 0.3), hsl(142, 89%, 78%, 0.3)); */
+  border-image: fill 1
+    linear-gradient(hsl(312, 100%, 50%, 0.3), hsl(240, 50%, 40%, 0.3));
+}
+.hero {
+  background-image: url(./images/background/all_ages_workshop.jpeg);
+  background-size: cover;
+  background-position: center 22%;
+  background-repeat: no-repeat;
+
+  /* min-block-size: 80vh; */
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: left;
 }

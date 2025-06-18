@@ -48,6 +48,8 @@ a {
 #header-section {
   display: flex;
   justify-content: space-between;
+  margin: 5px;
+  gap: 5px;
 }
 .logo-wrapper {
   height: max-content;
@@ -59,7 +61,7 @@ a {
   );
   /* border-image: fill 1
     linear-gradient(hsl(210, 96%, 46%, 0.5), hsl(210, 96%, 46%, 0.5)); */
-  margin: 3px;
+  /* margin-right: 3px; */
 }
 .draw-icon-wrapper {
   padding: 5px;
@@ -93,7 +95,7 @@ a {
     hsl(355, 100%, 69%, 0.5),
     hsl(35, 100%, 72%, 0.5)
   );
-  margin: 3px;
+  /* margin: 3px; */
 }
 .nav-list {
   display: flex;
@@ -179,5 +181,33 @@ a {
   color: #e6e6e6;
   /* color: #cccccc; */
   /* font-weight: 502; */
+}
+/* ABOUT SECTION -------------------------------------*/
+#about-section {
+  margin: 5px;
+  /* background-color: #ffd194; */
+  display: flex;
+}
+.mission-statement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* .mission-image{} */
+/* SERVICE SECTION -------------------------------------*/
+#service-section {
+  margin: 5px;
+  background-color: #70e1f5;
+}
+/* BENEFITS SECTION -------------------------------------*/
+#benefits-section {
+  margin: 5px;
+  background-color: #b0dab9;
+}
+/* WORKSHOPS SECTION -------------------------------------*/
+#workshops-section {
+  margin: 5px;
+  background-color: #dad299;
 }
 /* ---------------------------------- */

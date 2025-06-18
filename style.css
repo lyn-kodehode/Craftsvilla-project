@@ -44,7 +44,7 @@ a {
   border-image: fill 1
     linear-gradient(hsl(312, 100%, 50%, 0.3), hsl(240, 50%, 40%, 0.3));
 }
-/* HEADER LOGO SECTION -------------------------------------*/
+/* HEADER LOGO SECTION ------------------------------------------------------------------------------------------------------------*/
 #header-section {
   display: flex;
   justify-content: space-between;
@@ -59,9 +59,6 @@ a {
     hsl(210, 96%, 46%, 0.5),
     hsl(210, 96%, 46%, 0.5)
   );
-  /* border-image: fill 1
-    linear-gradient(hsl(210, 96%, 46%, 0.5), hsl(210, 96%, 46%, 0.5)); */
-  /* margin-right: 3px; */
 }
 .draw-icon-wrapper {
   padding: 5px;
@@ -84,7 +81,7 @@ a {
   font-weight: 599;
   color: #000;
 }
-/* HEADER NAVBAR SECTION -------------------------------------*/
+/* HEADER NAVBAR SECTION ------------------------------------------------------------------------------------------------------------*/
 #nav-section {
   display: flex;
   justify-content: center;
@@ -95,7 +92,6 @@ a {
     hsl(355, 100%, 69%, 0.5),
     hsl(35, 100%, 72%, 0.5)
   );
-  /* margin: 3px; */
 }
 .nav-list {
   display: flex;
@@ -127,7 +123,7 @@ a {
 .nav-link:active {
   color: purple;
 }
-/* HERO SECTION -------------------------------------*/
+/* HERO SECTION ------------------------------------------------------------------------------------------------------------*/
 #hero-section {
   display: flex;
   flex-direction: column;
@@ -181,7 +177,7 @@ a {
   color: #e6e6e6;
   cursor: pointer;
 }
-/* ABOUT SECTION -------------------------------------*/
+/* ABOUT SECTION ------------------------------------------------------------------------------------------------------------*/
 #about-section {
   margin: 5px;
   display: flex;
@@ -219,19 +215,54 @@ a {
   cursor: pointer;
   padding: 2px;
 }
-/* SERVICE SECTION -------------------------------------*/
+/* SERVICE SECTION ------------------------------------------------------------------------------------------------------------*/
 #service-section {
   margin: 5px;
   background-color: #70e1f5;
 }
-/* BENEFITS SECTION -------------------------------------*/
+/* BENEFITS SECTION ------------------------------------------------------------------------------------------------------------*/
 #benefits-section {
   margin: 5px;
   background-color: #b0dab9;
 }
-/* WORKSHOPS SECTION -------------------------------------*/
+/* WORKSHOPS SECTION ------------------------------------------------------------------------------------------------------------*/
 #workshops-section {
   margin: 5px;
   background-color: #dad299;
 }
-/* ---------------------------------- */
+/* FOOTER SECTION ------------------------------------------------------------------------------------------------------------*/
+#footer-section {
+  background-color: #ffdde1;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-wrapper-top {
+  background-color: #ff0099;
+  display: flex;
+}
+.footer-left {
+  background-color: #f5af19;
+}
+.footer-middle {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  height: 150px;
+}
+/* .footer-word-wrapper {
+  background: linear-gradient(hsl(0, 0%, 100%), hsl(0, 0%, 0%, 0.2));
+} */
+.footer-middle p {
+  font-family: var(--font-sacramento);
+  color: #fff;
+  font-size: var(--h2-size);
+  padding: 5px;
+}
+.footer-right {
+  background-color: #4a00e0;
+}
+.footer-copyright {
+  background-color: #f3f9a7;
+}
+/* ----------------------------------------------------------------------------------------------------------------------------*/

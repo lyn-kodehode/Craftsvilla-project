@@ -14,6 +14,7 @@
   --font-open-sans: "Open Sans", sans-serif;
   --font-lato: "Lato", sans-serif;
   --font-roboto: "Roboto", sans-serif;
+  --font-sacramento: "Sacramento", cursive;
   --h1-size: 60px;
   --h2-size: 45px;
   --h3-size: 30px;
@@ -42,6 +43,43 @@ a {
 .overlay {
   border-image: fill 1
     linear-gradient(hsl(312, 100%, 50%, 0.3), hsl(240, 50%, 40%, 0.3));
+}
+/* HEADER SECTION -------------------------------------*/
+#header-section {
+  height: ;
+}
+.logo-wrapper {
+  height: max-content;
+  width: max-content;
+  display: flex;
+  background-color: linear-gradient(
+    hsl(210, 96%, 46%, 0.5),
+    hsl(210, 96%, 46%, 0.5)
+  );
+  /* border-image: fill 1
+    linear-gradient(hsl(210, 96%, 46%, 0.5), hsl(210, 96%, 46%, 0.5)); */
+  margin: 3px;
+}
+.draw-icon-wrapper {
+  padding: 5px;
+  background-color: #fff;
+}
+.draw-icon {
+  height: 15vh;
+}
+.word-icon-wrapper {
+  /* background-color: hsl(144, 100%, 47%, 0.5); */
+  background: linear-gradient(
+    hsl(144, 100%, 47%, 0.5),
+    hsl(210, 96%, 46%, 0.5)
+  );
+  padding: 5px;
+}
+.word-icon {
+  font-family: var(--font-sacramento);
+  font-size: 10vh;
+  font-weight: 599;
+  color: #000;
 }
 /* HERO SECTION -------------------------------------*/
 #hero-section {

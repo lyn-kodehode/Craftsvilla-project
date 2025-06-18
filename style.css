@@ -44,9 +44,10 @@ a {
   border-image: fill 1
     linear-gradient(hsl(312, 100%, 50%, 0.3), hsl(240, 50%, 40%, 0.3));
 }
-/* HEADER SECTION -------------------------------------*/
+/* HEADER LOGO SECTION -------------------------------------*/
 #header-section {
-  height: ;
+  display: flex;
+  justify-content: space-between;
 }
 .logo-wrapper {
   height: max-content;
@@ -73,7 +74,7 @@ a {
     hsl(144, 100%, 47%, 0.5),
     hsl(210, 96%, 46%, 0.5)
   );
-  padding: 5px;
+  padding: 3px 10px 5px 5px;
 }
 .word-icon {
   font-family: var(--font-sacramento);
@@ -81,12 +82,54 @@ a {
   font-weight: 599;
   color: #000;
 }
+/* HEADER NAVBAR SECTION -------------------------------------*/
+#nav-section {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 100%;
+  background: linear-gradient(
+    360deg,
+    hsl(355, 100%, 69%, 0.5),
+    hsl(35, 100%, 72%, 0.5)
+  );
+  margin: 3px;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  font-family: var(--font-roboto);
+  font-size: var(--h3-size);
+  flex-wrap: wrap;
+  width: 70%;
+  gap: 20px;
+}
+.nav-link {
+  color: #1a1a1a;
+  padding: 2px 5px;
+}
+.nav-link:link {
+  color: #1a1a1a;
+}
+.nav-link:visited {
+  /* color: #ef629f; */
+  color: #808080;
+}
+.nav-link:hover {
+  color: hsl(334, 82%, 66%, 0.9);
+  border: solid white 3px;
+  box-shadow: inset 0 0 5px rgb(0, 0, 0, 0.5);
+}
+.nav-link:active {
+  color: purple;
+}
 /* HERO SECTION -------------------------------------*/
 #hero-section {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-bottom: 50px;
+  margin: 0 3px;
   position: relative;
 }
 /* hero image div */
@@ -108,7 +151,7 @@ a {
   /* display: block; */
   text-align: center;
   position: absolute;
-  bottom: 3%;
+  bottom: 10%;
   align-self: center;
 }
 .button {
@@ -137,3 +180,4 @@ a {
   /* color: #cccccc; */
   /* font-weight: 502; */
 }
+/* ---------------------------------- */

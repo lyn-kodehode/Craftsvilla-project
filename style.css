@@ -61,7 +61,27 @@ a {
   background-size: cover;
   background-position: center;
   height: 50vh;
+  background-repeat: no-repeat;
 }
+/* .polygon2 {
+  height: 13vh;
+  background-color: #f3f3f1;
+  background-color: #fff;
+} */
+/* .polygon2 {
+  background-image: url(./images/background/upside-down-mountain.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20vh;
+} */
+/* .polygon3 {
+  background-image: url(./images/background/cropped-abstract-city-lines.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40vh;
+} */
 /* HEADER LOGO SECTION ------------------------------------------------------------------------------------------------------------*/
 #header-section {
   display: flex;
@@ -192,6 +212,7 @@ a {
   /* margin: 5px; */
   display: flex;
   height: 60vh;
+  flex-wrap: wrap;
 }
 .mission-statement {
   display: flex;
@@ -220,6 +241,7 @@ a {
   margin: 5px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 7%;
 }
 #service-section img {
   width: 100%;
@@ -260,7 +282,6 @@ a {
   display: flex;
   flex-direction: column;
   /* padding: 10px 10px 0px 10px; */
-  height: max-content;
   gap: 5px;
 }
 .mosaic-service {
@@ -314,11 +335,42 @@ a {
 
 /* BENEFITS SECTION ------------------------------------------------------------------------------------------------------------*/
 #benefits-section {
-  margin: 5px;
-  background-color: #b0dab9;
+  margin: 0 5px 5px;
+  /* background-color: #f3f3f1; */
+  height: 100vh;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url(./images/background/watercolor-stain2.avif);
+  background-size: cover;
+  background-position: center;
+}
+#benefits-section h2 {
+  text-align: center;
 }
 .image-container {
   display: flex;
+  height: 60vh;
+  gap: 20px;
+}
+.image-box {
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  /* border: solid #6a836f; */
+  /* scrollbar is at the end of section */
+}
+.image-box img {
+  height: 85%;
+}
+.image-caption {
+  text-align: center;
+  padding: 10px;
+}
+.image-caption p {
+  font-family: var(--font-pacifico);
+  font-size: 24px;
+  color: #302b63;
 }
 /* WORKSHOPS SECTION ------------------------------------------------------------------------------------------------------------*/
 #workshops-section {
@@ -327,7 +379,7 @@ a {
 }
 /* FOOTER SECTION ------------------------------------------------------------------------------------------------------------*/
 #footer-section {
-  margin: 5px;
+  margin: 0 5px 5px;
   display: flex;
   flex-direction: column;
 }
@@ -391,7 +443,8 @@ a {
   justify-content: center;
 }
 .footer-copyright {
-  background-color: #f3f9a7;
+  /* background-color: #f3f9a7; */
+  background: linear-gradient(90deg, #94e2b6, #c0fc97);
   text-align: center;
   padding: 6px;
   font-size: 18px;
@@ -405,7 +458,7 @@ a {
   color: #b3b3b3;
 }
 .footer-list a:hover {
-  color: #f3f9a7;
+  color: #94e2b6;
 }
 .footer-list a:active {
   color: #ff5f6d;

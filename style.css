@@ -56,66 +56,67 @@ a {
   border-image: fill 1
     linear-gradient(hsl(312, 100%, 50%, 0.3), hsl(240, 50%, 40%, 0.3));
 }
+.polygon {
+  background-image: url(./images/background/cropped-mountain.png);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
 /* HEADER LOGO SECTION ------------------------------------------------------------------------------------------------------------*/
 #header-section {
   display: flex;
   justify-content: space-between;
   margin: 5px;
-  gap: 5px;
+  gap: 10%;
 }
-.logo-wrapper {
-  height: max-content;
-  width: max-content;
-  display: flex;
-  background-color: linear-gradient(
-    hsl(210, 96%, 46%, 0.5),
-    hsl(210, 96%, 46%, 0.5)
-  );
-}
-.draw-icon-wrapper {
-  display: flex;
-  align-items: center;
-  padding: 5px;
-  background-color: #fff;
-}
-.iconlogo1 {
-  margin-bottom: 12px;
-}
+
 .word-icon-wrapper {
-  /* background-color: hsl(144, 100%, 47%, 0.5); */
-  background: linear-gradient(
-    hsl(144, 100%, 47%, 0.5),
-    hsl(210, 96%, 46%, 0.5)
-  );
-  padding: 3px 10px 5px 5px;
+  display: flex;
+  width: max-content;
+  padding: 10px;
 }
 .word-icon {
   font-family: var(--font-sacramento);
   font-size: 10vh;
-  font-weight: 599;
+  font-weight: 600;
   color: #000;
 }
+.word-icon:hover {
+  color: transparent;
+  background: linear-gradient(
+    360deg,
+    rgba(199, 255, 221, 0.6) 5%,
+    rgba(0, 240, 96, 0.6) 40%,
+    rgba(5, 117, 230, 0.6) 80%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  cursor: pointer;
+}
+/* .vertical-line {
+  border-left: solid black;
+} */
 /* HEADER NAVBAR SECTION ------------------------------------------------------------------------------------------------------------*/
 #nav-section {
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: center;
   width: 100%;
-  background: linear-gradient(
+  /* background: linear-gradient(
     360deg,
     hsl(355, 100%, 69%, 0.5),
     hsl(35, 100%, 72%, 0.5)
-  );
+  ); */
 }
 .nav-list {
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
-  font-family: var(--font-roboto);
+  font-family: var(--font-lato);
   font-size: var(--h3-size);
   flex-wrap: wrap;
-  width: 70%;
-  gap: 20px;
+  width: 100%;
+  gap: 15px;
 }
 .nav-link {
   color: #1a1a1a;
@@ -129,10 +130,19 @@ a {
   color: #808080;
 }
 .nav-link:hover {
-  color: hsl(334, 82%, 66%, 0.9);
-  border: solid white 3px;
-  box-shadow: inset 0 0 5px rgb(0, 0, 0, 0.5);
+  color: transparent;
+  background: linear-gradient(
+    360deg,
+    rgba(199, 255, 221, 1) 0%,
+    rgba(0, 240, 96, 1) 40%,
+    rgba(5, 117, 230, 1) 70%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
   cursor: pointer;
+  /* color: hsl(334, 82%, 66%, 0.9); */
+  /* border: solid white 3px; */
+  /* box-shadow: inset 0 0 5px rgb(0, 0, 0, 0.5); */
 }
 .nav-link:active {
   color: purple;
@@ -193,28 +203,30 @@ a {
 }
 /* ABOUT SECTION ------------------------------------------------------------------------------------------------------------*/
 #about-section {
-  margin: 5px;
+  /* margin: 5px; */
   display: flex;
+  height: 60vh;
 }
 .mission-statement {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
-  background-image: url(./images/background/polygon.avif);
+  /* background-image: url(./images/background/polygon.avif);
   border-image: fill 1
-    linear-gradient(hsl(0, 0%, 0%, 0.3), hsl(0, 0%, 100%, 0.5));
-  gap: 40px;
+    linear-gradient(hsl(0, 0%, 0%, 0.1), hsl(0, 0%, 100%, 0.3)); */
+  gap: 60px;
+  background-color: #f3f3f1;
 }
 .span-craftsvilla {
   font-family: var(--font-sacramento);
-  font-size: 26px;
+  font-size: 32px;
   font-weight: 600;
 }
 .mission-statement p {
-  font-size: 22px;
-  width: 60%;
-  line-height: 1.7;
+  font-size: 26px;
+  width: 40%;
+  line-height: 2;
   text-align: justify;
 }
 /* SERVICE SECTION ------------------------------------------------------------------------------------------------------------*/
@@ -254,9 +266,9 @@ a {
   background: #ff5f6d;
   background: linear-gradient(
     250deg,
-    rgba(255, 95, 109, 0.5) 0%,
-    rgba(255, 161, 95, 0.5) 50%,
-    rgba(255, 95, 189, 0.5) 100%
+    rgba(255, 95, 109, 0.4) 0%,
+    rgba(255, 161, 95, 0.4) 50%,
+    rgba(255, 95, 189, 0.4) 100%
   );
   display: flex;
   flex-direction: column;
@@ -272,10 +284,10 @@ a {
   /* background-color: #b0dab9; */
   background: #b0dab9;
   background: linear-gradient(
-    280deg,
-    rgba(176, 218, 185, 0.8) 0%,
-    rgba(185, 176, 218, 0.8) 50%,
-    rgba(218, 185, 176, 0.8) 100%
+    50deg,
+    rgba(176, 218, 185, 0.6) 0%,
+    rgba(185, 176, 218, 0.6) 50%,
+    rgba(218, 185, 176, 0.6) 100%
   );
   display: flex;
   flex-direction: column;
@@ -289,10 +301,10 @@ a {
   /* background-color: #ffc371; */
   background: #ffc371;
   background: linear-gradient(
-    200deg,
-    rgba(255, 195, 113, 0.5) 0%,
-    rgba(113, 255, 195, 0.5) 50%,
-    rgba(195, 113, 255, 0.5) 100%
+    100deg,
+    rgba(255, 195, 113, 0.4) 0%,
+    rgba(113, 255, 195, 0.4) 50%,
+    rgba(195, 113, 255, 0.4) 100%
   );
   display: flex;
   flex-direction: column;
@@ -362,23 +374,6 @@ a {
 .footer-word-wrapper {
   display: flex;
 }
-.iconlogo2 {
-  color: #fff;
-  align-self: center;
-  margin-bottom: 12px;
-}
-.iconlogo2:hover {
-  color: transparent;
-  background: linear-gradient(
-    180deg,
-    rgba(199, 255, 221, 1) 10%,
-    rgba(0, 240, 96, 1) 40%,
-    rgba(5, 117, 230, 1) 70%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  cursor: pointer;
-}
 .footer-middle p {
   font-family: var(--font-sacramento);
   color: #fff;
@@ -388,10 +383,10 @@ a {
 .footer-middle p:hover {
   color: transparent;
   background: linear-gradient(
-    180deg,
-    rgba(199, 255, 221, 1) 10%,
-    rgba(0, 240, 96, 1) 40%,
-    rgba(5, 117, 230, 1) 70%
+    360deg,
+    rgba(199, 255, 221, 0.6) 20%,
+    rgba(0, 240, 96, 0.6) 40%,
+    rgba(5, 117, 230, 0.6) 80%
   );
   background-clip: text;
   -webkit-background-clip: text;

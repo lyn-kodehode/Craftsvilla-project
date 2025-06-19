@@ -315,6 +315,9 @@ a {
   margin: 5px;
   background-color: #b0dab9;
 }
+.image-container {
+  display: flex;
+}
 /* WORKSHOPS SECTION ------------------------------------------------------------------------------------------------------------*/
 #workshops-section {
   margin: 5px;

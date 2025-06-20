@@ -63,25 +63,6 @@ a {
   height: 50vh;
   background-repeat: no-repeat;
 }
-/* .polygon2 {
-  height: 13vh;
-  background-color: #f3f3f1;
-  background-color: #fff;
-} */
-/* .polygon2 {
-  background-image: url(./images/background/upside-down-mountain.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 20vh;
-} */
-/* .polygon3 {
-  background-image: url(./images/background/cropped-abstract-city-lines.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 40vh;
-} */
 /* HEADER LOGO SECTION ------------------------------------------------------------------------------------------------------------*/
 #header-section {
   display: flex;
@@ -192,8 +173,6 @@ a {
   width: auto;
 }
 .cta-button {
-  /* background-color: #000; */
-  /* background: linear-gradient(hsl(159, 68%, 35%, 0.9), hsl(142, 89%, 78%, 0.9)); */
   color: #fff;
   font-family: var(--font-lato);
   font-size: 20px;
@@ -219,9 +198,6 @@ a {
   flex-direction: column;
   justify-content: end;
   align-items: center;
-  /* background-image: url(./images/background/polygon.avif);
-  border-image: fill 1
-    linear-gradient(hsl(0, 0%, 0%, 0.1), hsl(0, 0%, 100%, 0.3)); */
   gap: 60px;
   background-color: #f3f3f1;
 }
@@ -338,21 +314,24 @@ a {
   margin: 0 5px 5px;
   /* background-color: #f3f3f1; */
   height: 100vh;
-  overflow-x: auto;
+
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   background-image: url(./images/background/watercolor-stain2.avif);
   background-size: cover;
   background-position: center;
 }
 #benefits-section h2 {
   text-align: center;
+  margin-top: 2%;
 }
 .image-container {
   display: flex;
-  height: 60vh;
+  height: 80vh;
   gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 5%;
 }
 .image-box {
   background-color: #fff;
@@ -423,15 +402,6 @@ a {
   padding: 5px;
 }
 .footer-middle p:hover {
-  /* color: transparent;
-  background: linear-gradient(
-    360deg,
-    rgba(199, 255, 221, 0.6) 20%,
-    rgba(0, 240, 96, 0.6) 40%,
-    rgba(5, 117, 230, 0.6) 80%
-  );
-  background-clip: text;
-  -webkit-background-clip: text; */
   color: #f3f9a7;
   cursor: pointer;
 }
@@ -463,5 +433,92 @@ a {
 .footer-list a:active {
   color: #ff5f6d;
 }
-
+/* BOOKING PAGE  ------------------------------------------------------------------------------------------------------------*/
+/* MOSAIC SECTION  ------------------------------------------------------------------------------------------------------------*/
+.snaps-inline {
+  scroll-snap-type: inline mandatory;
+  /* general snap property */
+  scroll-padding-inline: var(--_spacer);
+  /* padding x axis left-right */
+}
+.snaps-inline > * {
+  /* selects all the direct children elements */
+  scroll-snap-align: start;
+  /* snaos but left padding disappears */
+}
+.media-scroller {
+  --_spacer: 2rem;
+  /* private variable not part of root */
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 23%;
+  gap: var(--_spacer);
+  padding: var(--_spacer) var(--_spacer);
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  /* to contain scrolling */
+}
+.media-scroller-with-groups {
+  border: 2px solid hotpink;
+  grid-auto-columns: 90%;
+}
+.media-group {
+  border: 2px solid limegreen;
+  display: grid;
+  grid-auto-flow: column;
+  gap: var(--_spacer);
+}
+.product-article {
+  /* media-element */
+  padding: 1rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  /* display: grid;
+  grid-template-rows: min-content;
+  gap: var(--_spacer); */
+}
+.product-article > img {
+  /* targets direct images */
+  inline-size: 100%;
+  /* logical width property */
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+/* .mosaic-articles {} */
+.mosaic-article {
+  background: #ff5f6d;
+  background: linear-gradient(
+    250deg,
+    rgba(255, 95, 109, 0.4) 0%,
+    rgba(255, 161, 95, 0.4) 50%,
+    rgba(255, 95, 189, 0.4) 100%
+  );
+}
+.watercolor-article {
+  background: #b0dab9;
+  background: linear-gradient(
+    50deg,
+    rgba(176, 218, 185, 0.6) 0%,
+    rgba(185, 176, 218, 0.6) 50%,
+    rgba(218, 185, 176, 0.6) 100%
+  );
+}
+.canvas-article {
+  background: #ffc371;
+  background: linear-gradient(
+    100deg,
+    rgba(255, 195, 113, 0.4) 0%,
+    rgba(113, 255, 195, 0.4) 50%,
+    rgba(195, 113, 255, 0.4) 100%
+  );
+}
+/* ORDER SECTION ------------------------------------------------------------------------------------------------------------*/
+.order-wrapper {
+  display: grid;
+}
+#dialog-message {
+  justify-self: center;
+  align-self: center;
+}
+/* HEADER NAVBAR SECTION ------------------------------------------------------------------------------------------------------------*/
 /* ----------------------------------------------------------------------------------------------------------------------------*/

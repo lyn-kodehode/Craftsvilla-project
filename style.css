@@ -63,25 +63,6 @@ a {
   height: 50vh;
   background-repeat: no-repeat;
 }
-/* .polygon2 {
-  height: 13vh;
-  background-color: #f3f3f1;
-  background-color: #fff;
-} */
-/* .polygon2 {
-  background-image: url(./images/background/upside-down-mountain.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 20vh;
-} */
-/* .polygon3 {
-  background-image: url(./images/background/cropped-abstract-city-lines.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 40vh;
-} */
 /* HEADER LOGO SECTION ------------------------------------------------------------------------------------------------------------*/
 #header-section {
   display: flex;
@@ -192,8 +173,6 @@ a {
   width: auto;
 }
 .cta-button {
-  /* background-color: #000; */
-  /* background: linear-gradient(hsl(159, 68%, 35%, 0.9), hsl(142, 89%, 78%, 0.9)); */
   color: #fff;
   font-family: var(--font-lato);
   font-size: 20px;
@@ -219,9 +198,6 @@ a {
   flex-direction: column;
   justify-content: end;
   align-items: center;
-  /* background-image: url(./images/background/polygon.avif);
-  border-image: fill 1
-    linear-gradient(hsl(0, 0%, 0%, 0.1), hsl(0, 0%, 100%, 0.3)); */
   gap: 60px;
   background-color: #f3f3f1;
 }
@@ -338,21 +314,24 @@ a {
   margin: 0 5px 5px;
   /* background-color: #f3f3f1; */
   height: 100vh;
-  overflow-x: auto;
+
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   background-image: url(./images/background/watercolor-stain2.avif);
   background-size: cover;
   background-position: center;
 }
 #benefits-section h2 {
   text-align: center;
+  margin-top: 2%;
 }
 .image-container {
   display: flex;
-  height: 60vh;
+  height: 80vh;
   gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 5%;
 }
 .image-box {
   background-color: #fff;
@@ -423,15 +402,6 @@ a {
   padding: 5px;
 }
 .footer-middle p:hover {
-  /* color: transparent;
-  background: linear-gradient(
-    360deg,
-    rgba(199, 255, 221, 0.6) 20%,
-    rgba(0, 240, 96, 0.6) 40%,
-    rgba(5, 117, 230, 0.6) 80%
-  );
-  background-clip: text;
-  -webkit-background-clip: text; */
   color: #f3f9a7;
   cursor: pointer;
 }
@@ -463,5 +433,71 @@ a {
 .footer-list a:active {
   color: #ff5f6d;
 }
+/* BOOKING PAGE  ------------------------------------------------------------------------------------------------------------*/
+/* MOSAIC SECTION  ------------------------------------------------------------------------------------------------------------*/
+.product-card {
+  /* all product cards on booking page */
+  /* width: 100%; */
+}
+.snaps-inline {
+  scroll-snap-type: inline mandatory;
+  /* general snap property */
+  scroll-padding-inline: var(--_spacer);
+  /* padding x axis left-right */
+}
+.snaps-inline > * {
+  /* selects all the direct children elements */
+  scroll-snap-align: start;
+  /* snaos but left padding disappears */
+}
+#mosaic-products {
+  /* height: 100%; */
+}
+.mosaic-articles {
+  /* div for all product cards */
+  --_spacer: 2rem;
+  /* private variable not part of root */
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 23%;
+  gap: var(--_spacer);
+  padding: var(--_spacer) var(--_spacer);
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  /* to contain scrolling */
+}
+.mosaic-card {
+  /* product cards on mosaic section only */
+  /* display: grid;
+  gap: 2rem; */
+  padding: 1rem;
+  background: #ff5f6d;
+  background: linear-gradient(
+    250deg,
+    rgba(255, 95, 109, 0.4) 0%,
+    rgba(255, 161, 95, 0.4) 50%,
+    rgba(255, 95, 189, 0.4) 100%
+  );
+  border-radius: 0.3rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+.mosaic-card > img {
+  /* targets direct images */
+  inline-size: 100%;
+  /* logical width property */
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+#watercolor-products {
+  /* height: 100%; */
+}
+#canvas-products {
+  /* height: 100%; */
+}
+.products-section {
+  /* height: 100vh; */
+  /* div wrapper around all products IDs */
+}
+/* HEADER NAVBAR SECTION ------------------------------------------------------------------------------------------------------------*/
 
 /* ----------------------------------------------------------------------------------------------------------------------------*/

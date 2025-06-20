@@ -435,10 +435,6 @@ a {
 }
 /* BOOKING PAGE  ------------------------------------------------------------------------------------------------------------*/
 /* MOSAIC SECTION  ------------------------------------------------------------------------------------------------------------*/
-.product-card {
-  /* all product cards on booking page */
-  /* width: 100%; */
-}
 .snaps-inline {
   scroll-snap-type: inline mandatory;
   /* general snap property */
@@ -450,11 +446,7 @@ a {
   scroll-snap-align: start;
   /* snaos but left padding disappears */
 }
-#mosaic-products {
-  /* height: 100%; */
-}
-.mosaic-articles {
-  /* div for all product cards */
+.media-scroller {
   --_spacer: 2rem;
   /* private variable not part of root */
   display: grid;
@@ -466,11 +458,34 @@ a {
   overscroll-behavior-inline: contain;
   /* to contain scrolling */
 }
-.mosaic-card {
-  /* product cards on mosaic section only */
-  /* display: grid;
-  gap: 2rem; */
+.media-scroller-with-groups {
+  border: 2px solid hotpink;
+  grid-auto-columns: 90%;
+}
+.media-group {
+  border: 2px solid limegreen;
+  display: grid;
+  grid-auto-flow: column;
+  gap: var(--_spacer);
+}
+.product-article {
+  /* media-element */
   padding: 1rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  /* display: grid;
+  grid-template-rows: min-content;
+  gap: var(--_spacer); */
+}
+.product-article > img {
+  /* targets direct images */
+  inline-size: 100%;
+  /* logical width property */
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+/* .mosaic-articles {} */
+.mosaic-article {
   background: #ff5f6d;
   background: linear-gradient(
     250deg,
@@ -478,28 +493,32 @@ a {
     rgba(255, 161, 95, 0.4) 50%,
     rgba(255, 95, 189, 0.4) 100%
   );
-  border-radius: 0.3rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
-.mosaic-card > img {
-  /* targets direct images */
-  inline-size: 100%;
-  /* logical width property */
-  aspect-ratio: 16/9;
-  object-fit: cover;
+.watercolor-article {
+  background: #b0dab9;
+  background: linear-gradient(
+    50deg,
+    rgba(176, 218, 185, 0.6) 0%,
+    rgba(185, 176, 218, 0.6) 50%,
+    rgba(218, 185, 176, 0.6) 100%
+  );
 }
-#watercolor-products {
-  /* height: 100%; */
-}
-#canvas-products {
-  /* height: 100%; */
-}
-.products-section {
-  /* height: 100vh; */
-  /* div wrapper around all products IDs */
+.canvas-article {
+  background: #ffc371;
+  background: linear-gradient(
+    100deg,
+    rgba(255, 195, 113, 0.4) 0%,
+    rgba(113, 255, 195, 0.4) 50%,
+    rgba(195, 113, 255, 0.4) 100%
+  );
 }
 /* ORDER SECTION ------------------------------------------------------------------------------------------------------------*/
-/* #order-section{} */
-/* .order-form{} */
+.order-wrapper {
+  display: grid;
+}
+#dialog-message {
+  justify-self: center;
+  align-self: center;
+}
 /* HEADER NAVBAR SECTION ------------------------------------------------------------------------------------------------------------*/
 /* ----------------------------------------------------------------------------------------------------------------------------*/

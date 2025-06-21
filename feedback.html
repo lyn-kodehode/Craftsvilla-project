@@ -42,7 +42,125 @@
           </ul>
         </nav>
       </header>
-      <main></main>
+      <main>
+        <section id="intro-feedback">
+          <h1>We'd love to hear from you!</h1>
+          <p>
+            Your feedback helps us make our workshops better for everyone.
+            Please share your experience with us!
+          </p>
+        </section>
+        <section id="feedback-section">
+          <h2>Product Feedback</h2>
+          <div class="feedback-wrapper">
+            <form id="feedback-form" action="">
+              <div class="name">
+                <label for="name">Your name: </label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <br />
+              <div class="email">
+                <label for="email">Your email: </label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <br />
+              <div class="workshop-attended">
+                <label for="workshop-attended">Workshop Attended:</label>
+                <select
+                  name="workshop-attended"
+                  id="workshop-attended"
+                  required
+                >
+                  <option value="workshop-attended" selected>
+                    choose workshop
+                  </option>
+                  <option value="mosaic">Mosaic</option>
+                  <option value="watercolor">Watercolor</option>
+                  <option value="`canvas">Canvas</option>
+                </select>
+                <br />
+              </div>
+              <div class="favorite">
+                <label for="favorite">What did you like best</label>
+                <br />
+                <textarea name="favorite" id="favorite"></textarea>
+              </div>
+              <br />
+              <div class="improvement">
+                <label for="improvement"
+                  >How can we improve your experience?</label
+                >
+                <textarea name="improvement" id="improvement"></textarea>
+              </div>
+              <br />
+              <div class="recommend">
+                <p>Would you recommend CRAFTSVILLA to others?</p>
+                <input type="radio" name="recommend" id="yes" checked />
+                <label for="yes">Yes</label>
+                <input type="radio" name="recommend" id="no" />
+                <label for="no">No</label>
+                <input type="radio" name="recommend" id="maybe" />
+                <label for="maybe">Maybe</label>
+              </div>
+              <br />
+              <div class="permission">
+                <input
+                  type="checkbox"
+                  name="permission"
+                  id="permission"
+                  required
+                />
+                <label for="permission"
+                  >I give CRAFTSVILLA permission to share my feedback on their
+                  website or social media.</label
+                >
+              </div>
+              <br />
+              <div class="upload">
+                <label for="upload">Select an image file:</label>
+                <input type="file" name="upload" id="upload" />
+              </div>
+              <br />
+              <div class="submit-button">
+                <input type="submit" value="Submit" />
+              </div>
+            </form>
+          </div>
+        </section>
+        <section id="testimonial-section">
+          <h2>Testimonials</h2>
+          <article class="testimonial1">
+            <img src="./images/logo/girl-bangs.png" alt="" />
+            <h3>Makayla</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+              quidem vel rem. Unde veniam laboriosam, cupiditate mollitia,
+              sapiente error, veritatis neque recusandae deserunt exercitationem
+              aspernatur corporis laborum natus nam sequi.
+            </p>
+          </article>
+          <article class="testimonial2">
+            <img src="./images/logo/head.png" alt="" />
+            <h3>Bob</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
+              modi dignissimos mollitia facilis aut et sunt. Soluta tenetur
+              sapiente velit.
+            </p>
+          </article>
+          <article class="testimonial3">
+            <img src="./images/logo/woman.png" alt="" />
+            <h3>Shweta</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+              eum quo porro optio? Labore incidunt eum eligendi minus hic vitae
+              quaerat debitis sunt consequuntur, enim officiis quia natus a.
+              Minus nihil nesciunt provident. Laborum veritatis commodi quae
+              debitis maxime aliquam!
+            </p>
+          </article>
+        </section>
+      </main>
       <footer id="footer-section">
         <div class="footer-wrapper-top">
           <div class="footer-left">

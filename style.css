@@ -557,5 +557,30 @@ a {
   justify-self: center;
   align-self: center;
 }
+/* GALLERY SECTION ------------------------------------------------------------------------------------------------------------*/
+#gallery-section {
+  /* height: 100vh; */
+}
+.box {
+  /* height: 25vh;
+  width: 100%; */
+}
+.grid-container {
+  margin: 3%;
+  justify-content: center;
+  display: grid;
+  gap: 1rem;
+  /* grid-template-columns: 15% 31% 22% 31%; */
+  grid-template-columns: repeat(4, fit-content(15%));
+  grid-template-rows: repeat(4, fit-content(30%));
+  /* gap: 1rem; */
+  /* grid-template-areas:
+    "box-1 box-2 box-2 box-2 box-2 box-2 box-2 box-3 box-3 box-4 box-4 box-4 box-4"
+    "box-5 box-5 box-5 box-5 box-6 box-7 box-7 box-7 box-7 box-7 box-7 box-8 box-8 "
+    "box-9 box-9 box-10 box-10 box-10 box-10 box-10 box-10 box-11 box-11 box-12 box-12 box-12 "
+    "box-13 box-13 box-13 box-14 box-14 box-14 box-15 box-15 box-15 box-15 box-15 box-15 box-16 "; */
+}
+
+/* FEEDBACK SECTION ------------------------------------------------------------------------------------------------------------*/
 /* HEADER NAVBAR SECTION ------------------------------------------------------------------------------------------------------------*/
 /* ----------------------------------------------------------------------------------------------------------------------------*/

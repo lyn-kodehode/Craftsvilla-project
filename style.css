@@ -557,5 +557,78 @@ a {
   justify-self: center;
   align-self: center;
 }
+/* GALLERY SECTION ------------------------------------------------------------------------------------------------------------*/
+#gallery-section {
+  display: grid;
+}
+/* .portfolio-item */
+.box {
+}
+.grid-image {
+  border: solid 2px #666666;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+/* .portfolio class */
+.grid-container {
+  justify-content: center;
+  display: grid;
+  gap: 1rem;
+  /* grid-template-columns: 15% 31% 22% 31%; */
+  grid-template-columns: repeat(4, fit-content(15%));
+  grid-template-rows: repeat(4, fit-content(30%));
+  padding: 3em;
+  background-image: url(./images/background/watercolor-splatter-stain-colorful-set-eight-529.webp);
+}
+/* GALLERY LIGHTBOX SECTION ------------------------------------------------------------------------------------------------------------*/
+/* .portfolio-lightboxes */
+.gallery-lightboxes {
+  /* display: none; */
+  /* hides the entire div */
+}
+/* ,portfolio-lightbox */
+.gallery-lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  /* display: flex; */
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgb(0, 0, 0, 0.5);
+}
+.gallery-lightbox:target {
+  display: flex;
+}
+.gallery-lightbox-content {
+  background-color: #000;
+  padding-bottom: 2rem;
+  position: relative;
+}
+.gallery-lightbox-caption {
+  color: #fff;
+  text-align: center;
+}
+.close-button {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  background-color: rgb(255, 0, 0, 0.7);
+  color: #fff;
+  font-size: 24px;
+  right: 0;
+  border-radius: 5px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lightbox-image {
+  height: 80vh;
+  border: solid 2px #666666;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+/* FEEDBACK SECTION ------------------------------------------------------------------------------------------------------------*/
 /* HEADER NAVBAR SECTION ------------------------------------------------------------------------------------------------------------*/
 /* ----------------------------------------------------------------------------------------------------------------------------*/

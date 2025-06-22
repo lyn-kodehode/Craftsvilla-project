@@ -44,87 +44,153 @@
       </header>
       <main>
         <section id="intro-feedback">
-          <h1>We'd love to hear from you!</h1>
-          <p>
-            Your feedback helps us make our workshops better for everyone.
-            Please share your experience with us!
-          </p>
+          <div class="intro-feedback-heading">
+            <h1>We'd love to hear from you!</h1>
+            <p>
+              Your feedback helps us make our workshops better for everyone.
+              Please share your experience with us!
+            </p>
+          </div>
+          <div class="intro-feedback-image">
+            <img
+              src="./images/background/education-background-with-pencil_53876-115369.avif"
+              alt=""
+            />
+          </div>
         </section>
         <section id="feedback-section">
-          <h2>Product Feedback</h2>
           <div class="feedback-wrapper">
-            <form id="feedback-form" action="">
-              <div class="name">
-                <label for="name">Your name: </label>
-                <input type="text" name="name" id="name" required />
-              </div>
-              <br />
-              <div class="email">
-                <label for="email">Your email: </label>
-                <input type="email" name="email" id="email" required />
-              </div>
-              <br />
-              <div class="workshop-attended">
-                <label for="workshop-attended">Workshop Attended:</label>
-                <select
-                  name="workshop-attended"
-                  id="workshop-attended"
-                  required
-                >
-                  <option value="workshop-attended" selected>
-                    choose workshop
-                  </option>
-                  <option value="mosaic">Mosaic</option>
-                  <option value="watercolor">Watercolor</option>
-                  <option value="`canvas">Canvas</option>
-                </select>
+            <h2>Service Feedback Form</h2>
+            <div class="form-wrapper">
+              <form id="feedback-form" action="">
+                <div class="name">
+                  <label for="name">Your name: </label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
                 <br />
-              </div>
-              <div class="favorite">
-                <label for="favorite">What did you like best</label>
+                <div class="email">
+                  <label for="email">Your email: </label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="your_email@email.com"
+                    required
+                  />
+                </div>
                 <br />
-                <textarea name="favorite" id="favorite"></textarea>
-              </div>
-              <br />
-              <div class="improvement">
-                <label for="improvement"
-                  >How can we improve your experience?</label
-                >
-                <textarea name="improvement" id="improvement"></textarea>
-              </div>
-              <br />
-              <div class="recommend">
-                <p>Would you recommend CRAFTSVILLA to others?</p>
-                <input type="radio" name="recommend" id="yes" checked />
-                <label for="yes">Yes</label>
-                <input type="radio" name="recommend" id="no" />
-                <label for="no">No</label>
-                <input type="radio" name="recommend" id="maybe" />
-                <label for="maybe">Maybe</label>
-              </div>
-              <br />
-              <div class="permission">
-                <input
-                  type="checkbox"
-                  name="permission"
-                  id="permission"
-                  required
-                />
-                <label for="permission"
-                  >I give CRAFTSVILLA permission to share my feedback on their
-                  website or social media.</label
-                >
-              </div>
-              <br />
-              <div class="upload">
-                <label for="upload">Select an image file:</label>
-                <input type="file" name="upload" id="upload" />
-              </div>
-              <br />
-              <div class="submit-button">
-                <input type="submit" value="Submit" />
-              </div>
-            </form>
+                <div class="workshop-attended">
+                  <label for="workshop-attended">Workshop Attended:</label>
+                  <select
+                    name="workshop-attended"
+                    id="workshop-attended"
+                    required
+                  >
+                    <option value="workshop-attended" selected>
+                      choose workshop
+                    </option>
+                    <option value="mosaic">Mosaic</option>
+                    <option value="watercolor">Watercolor</option>
+                    <option value="`canvas">Canvas</option>
+                  </select>
+                </div>
+                <br />
+                <div class="favorite">
+                  <label for="favorite">What did you like best</label>
+                  <br />
+                  <textarea name="favorite" id="favorite"></textarea>
+                </div>
+                <br />
+                <div class="improvement">
+                  <label for="improvement"
+                    >How can we improve your experience?</label
+                  >
+                  <textarea name="improvement" id="improvement"></textarea>
+                </div>
+                <br />
+                <div class="recommend">
+                  <p>
+                    Would you recommend
+                    <span class="span-logo"
+                      ><i class="fa-solid fa-palette"></i>raftsvilla</span
+                    >
+                    to others?
+                  </p>
+                  <label
+                    ><input type="radio" name="recommend" id="yes" checked />
+                    Yes</label
+                  >
+                  <label
+                    ><input type="radio" name="recommend" id="no" /> No</label
+                  >
+                  <label
+                    ><input type="radio" name="recommend" id="maybe" />
+                    Maybe</label
+                  >
+                </div>
+                <br />
+                <div class="permission">
+                  <label for="permission"
+                    ><input
+                      type="checkbox"
+                      name="permission"
+                      id="permission"
+                      required
+                    />
+                    I give
+                    <span class="span-logo"
+                      ><i class="fa-solid fa-palette"></i>raftsvilla!</span
+                    >
+                    permission to share my feedback on their website or social
+                    media.</label
+                  >
+                </div>
+                <br />
+                <div class="upload">
+                  <label for="upload">Select an image file: </label>
+                  <input type="file" name="upload" id="upload" />
+                </div>
+                <br />
+                <br />
+                <hr />
+                <!-- Submit button -->
+                <!-- <div class="submit-button">
+                  <input type="submit" value="Send feedback" />
+                </div> -->
+                <!-- dialog -->
+                <section id="dialog-section">
+                  <div class="submit-button-wrapper">
+                    <button
+                      class="submit-button"
+                      onclick="document.getElementById('dialog-message').showModal()"
+                    >
+                      Send feedback
+                    </button>
+                  </div>
+                  <dialog id="dialog-message">
+                    <!-- remove open to hide dialog-box -->
+                    <div id="dialog-box">
+                      <p>Thank you! Your feedback has been sent!</p>
+                      <br />
+                      <br />
+                      <button
+                        class="ok-button"
+                        onclick="document.getElementById('dialog-message').close()"
+                      >
+                        OK
+                      </button>
+                    </div>
+                  </dialog>
+                </section>
+                <br />
+              </form>
+            </div>
           </div>
         </section>
         <section id="testimonial-section">

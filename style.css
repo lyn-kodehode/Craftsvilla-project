@@ -262,6 +262,21 @@ a {
   gap: 20px;
   padding: 15px;
   background-color: transparent;
+  color: #4d4d4d;
+}
+.description-container p {
+  font-family: var(--font-roboto);
+  line-height: 1.5;
+}
+.span-kit {
+  font-weight: 800;
+  font-size: 22px;
+  color: #000;
+}
+.price {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #000;
 }
 #mosaic {
   width: 30%;
@@ -275,7 +290,6 @@ a {
   );
   display: flex;
   flex-direction: column;
-  /* padding: 10px 10px 0px 10px; */
   gap: 5px;
 }
 .mosaic-service {
@@ -318,15 +332,6 @@ a {
   display: flex;
   flex-direction: column;
 }
-.span-kit {
-  font-weight: 800;
-  font-size: 22px;
-}
-.price {
-  font-weight: 700;
-  font-size: 24px;
-}
-
 /* BENEFITS SECTION ------------------------------------------------------------------------------------------------------------*/
 #benefits-section {
   margin: 0 5px 5px;
@@ -525,9 +530,6 @@ a {
   padding: 1rem;
   border-radius: 0.3rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-  /* display: grid;
-  grid-template-rows: min-content;
-  gap: var(--_spacer); */
 }
 .product-article > img {
   /* targets direct images */
@@ -538,38 +540,36 @@ a {
 }
 /* .mosaic-articles {} */
 .mosaic-article {
-  background: #ff5f6d;
-  background: linear-gradient(
-    250deg,
-    rgba(255, 95, 109, 1) 0%,
-    rgba(255, 161, 95, 1) 50%,
-    rgba(255, 95, 189, 0.8) 100%
+  background-image: linear-gradient(
+    360deg,
+    rgba(238, 113, 113, 1) 1%,
+    rgba(246, 215, 148, 1) 58%
   );
 }
 .watercolor-article {
-  /* background: #b0dab9;
-  background: linear-gradient(
-    50deg,
-    rgba(176, 218, 185, 1) 0%,
-    rgba(185, 176, 218, 1) 50%,
-    rgba(218, 185, 176, 1) 100%
-  ); */
-  background: #ee9ca7;
-  background: linear-gradient(
-    180deg,
-    rgb(255, 221, 225, 1) 0%,
-    rgb(238, 156, 167, 1) 80%,
-    rgb(167, 109, 117, 1) 100%
+  background-image: linear-gradient(
+    360deg,
+    rgba(255, 105, 180, 1) 0%,
+    rgba(255, 174, 215, 0.7) 80%
   );
 }
 .canvas-article {
-  background: #ffc371;
-  background: linear-gradient(
-    100deg,
-    rgba(255, 195, 113, 1) 0%,
-    rgba(113, 255, 195, 0.7) 80%,
-    rgba(195, 113, 255, 0.8) 100%
+  background-image: linear-gradient(
+    360deg,
+    rgba(102, 203, 149, 1) 0%,
+    rgba(39, 210, 175, 0.7) 98.7%
   );
+}
+.book-now-btn {
+  background-color: rgb(42, 133, 213, 0.8);
+  color: #fff;
+  font-size: 2rem;
+  font-family: var(--font-open-sans);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+.book-now-btn:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 /* ORDER SECTION ------------------------------------------------------------------------------------------------------------*/
 #order-section {
@@ -585,11 +585,13 @@ a {
   background-position: bottom left;
 }
 .order-wrapper {
+  /* background-color: #3a43f2; */
   border-radius: 10px;
   display: grid;
-  /* background-color: #3a43f2; */
+  grid-template-columns: auto-fit;
   background-color: #6cc6c5;
-  width: 50%;
+  min-width: 50%;
+  overflow: hidden;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 .order-wrapper h2 {
@@ -701,9 +703,11 @@ input[type="reset"] {
 }
 input[type="reset"]:hover {
   cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 .order-button:hover {
   cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 #dialog-message {
   justify-self: center;
@@ -742,6 +746,7 @@ input[type="reset"]:hover {
 }
 .ok-button:hover {
   cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 /* GALLERY SECTION ------------------------------------------------------------------------------------------------------------*/
 #gallery-section {

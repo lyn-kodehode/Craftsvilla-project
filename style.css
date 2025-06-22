@@ -513,7 +513,7 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-bottom: 4rem;
+  padding-bottom: 8rem;
 }
 .media-group {
   display: grid;

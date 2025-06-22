@@ -790,10 +790,17 @@ input[type="reset"]:hover {
   background-color: #000;
   padding-bottom: 2rem;
   position: relative;
+  display: inline-block;
+  /* height: 90vh; */
 }
 .gallery-lightbox-caption {
+  padding: 1rem;
   color: #fff;
   text-align: center;
+  width: 100%;
+  width: 0;
+  min-width: 100%;
+  /* position: absolute; */
 }
 .close-button {
   position: absolute;

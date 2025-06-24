@@ -237,34 +237,44 @@ a {
 .articles-container {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 1rem;
 }
 .articles-container h3 {
   margin-top: 20px;
   text-align: center;
   color: #24243e;
 }
-.description-container {
-  background-color: #fff;
+.description-mosaic,
+.description-canvas,
+.description-watercolor {
+  /* margin: 30px; */
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 15px;
+  gap: 15px;
+  margin: 25px 15px;
   background-color: transparent;
   color: #4d4d4d;
+  justify-content: space-between;
+  /* border: 2px solid; */
 }
-.description-container p {
-  font-family: var(--font-roboto);
-  line-height: 1.5;
+.articles-container a {
+  font-size: 2rem;
+}
+.articles-container a:hover {
+  filter: drop-shadow(0 3px 0px rgb(0, 0, 0, 0.3));
+}
+.service-description {
+  line-height: 1.7;
+  font-size: 26px;
 }
 .span-kit {
   font-weight: 800;
   font-size: 22px;
   color: #000;
 }
-.price {
+.service-price {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #000;
 }
 #mosaic {
@@ -527,27 +537,48 @@ a {
   aspect-ratio: 16/9;
   object-fit: cover;
 }
+.description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* padding: 15px; */
+  background-color: transparent;
+  color: #4d4d4d;
+  justify-content: space-evenly;
+  border: 2px solid;
+  min-height: max-content;
+  /* margin-left: 5; */
+}
+.description-container p {
+  font-family: var(--font-roboto);
+  line-height: 1.5;
+}
+.price {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #000;
+}
 /* .mosaic-articles {} */
 .mosaic-article {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     360deg,
     rgba(238, 113, 113, 1) 1%,
     rgba(246, 215, 148, 1) 58%
-  );
+  ); */
 }
 .watercolor-article {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     360deg,
     rgba(255, 105, 180, 1) 0%,
     rgba(255, 174, 215, 0.7) 80%
-  );
+  ); */
 }
 .canvas-article {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     360deg,
     rgba(102, 203, 149, 1) 0%,
     rgba(39, 210, 175, 0.7) 98.7%
-  );
+  ); */
 }
 .book-now-btn {
   background-color: rgb(42, 133, 213, 0.8);

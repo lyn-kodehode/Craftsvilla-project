@@ -20,6 +20,13 @@
   --h3-size: 30px;
   --p-size: 20px;
 }
+/* HMEDIA QUERY ------------------------------------------------------------------------------------------------------------*/
+/* @media (min-width=601px) {
+  .word-icon {
+    flex-grow: 1;
+  }
+} */
+/* GENERAL HTML ELEMENTS ------------------------------------------------------------------------------------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -71,7 +78,6 @@ a {
   /* background-color: #f3f3f1; */
   background-color: #fff;
 }
-
 .word-icon-wrapper {
   display: flex;
   width: max-content;
@@ -237,34 +243,44 @@ a {
 .articles-container {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 1rem;
 }
 .articles-container h3 {
   margin-top: 20px;
   text-align: center;
   color: #24243e;
 }
-.description-container {
-  background-color: #fff;
+.description-mosaic,
+.description-canvas,
+.description-watercolor {
+  /* margin: 30px; */
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 15px;
+  gap: 15px;
+  margin: 25px 15px;
   background-color: transparent;
   color: #4d4d4d;
+  justify-content: space-between;
+  /* border: 2px solid; */
 }
-.description-container p {
-  font-family: var(--font-roboto);
-  line-height: 1.5;
+.articles-container a {
+  font-size: 2rem;
+}
+.articles-container a:hover {
+  filter: drop-shadow(0 3px 0px rgb(0, 0, 0, 0.3));
+}
+.service-description {
+  line-height: 1.7;
+  font-size: 26px;
 }
 .span-kit {
   font-weight: 800;
   font-size: 22px;
   color: #000;
 }
-.price {
+.service-price {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #000;
 }
 #mosaic {
@@ -519,6 +535,9 @@ a {
   padding: 1rem;
   border-radius: 0.3rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 .product-article > img {
   /* targets direct images */
@@ -527,30 +546,51 @@ a {
   aspect-ratio: 16/9;
   object-fit: cover;
 }
+.description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: transparent;
+  color: #4d4d4d;
+  justify-content: space-evenly;
+  min-height: max-content;
+}
+.description-container p {
+  font-family: var(--font-roboto);
+  line-height: 1.5;
+}
+.price {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #000;
+}
 /* .mosaic-articles {} */
 .mosaic-article {
   background-image: linear-gradient(
-    360deg,
+    180deg,
     rgba(238, 113, 113, 1) 1%,
-    rgba(246, 215, 148, 1) 58%
+    rgba(246, 215, 148, 1) 20%,
+    rgb(255, 255, 255, 0)
   );
 }
 .watercolor-article {
   background-image: linear-gradient(
-    360deg,
-    rgba(255, 105, 180, 1) 0%,
-    rgba(255, 174, 215, 0.7) 80%
+    180deg,
+    rgba(162, 186, 245, 1) 1%,
+    rgba(255, 173, 214, 1) 20%,
+    rgba(252, 225, 208, 0.3)
   );
 }
 .canvas-article {
   background-image: linear-gradient(
-    360deg,
-    rgba(102, 203, 149, 1) 0%,
-    rgba(39, 210, 175, 0.7) 98.7%
+    180deg,
+    rgba(17, 151, 147, 1) 1%,
+    rgba(154, 214, 212, 1) 20%,
+    rgba(255, 233, 171, 0.3)
   );
 }
 .book-now-btn {
-  background-color: rgb(42, 133, 213, 0.8);
+  background-color: #2a85d5cc;
   color: #fff;
   font-size: 2rem;
   font-family: var(--font-open-sans);
@@ -558,6 +598,8 @@ a {
   border-radius: 10px;
 }
 .book-now-btn:hover {
+  background-color: #226aaa;
+  color: #cccccc;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 /* ORDER SECTION ------------------------------------------------------------------------------------------------------------*/
@@ -696,10 +738,14 @@ input[type="reset"] {
 }
 input[type="reset"]:hover {
   cursor: pointer;
+  background-color: #569e9e;
+  color: #e6e6e6;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 .order-button:hover {
   cursor: pointer;
+  background-color: #569e9e;
+  color: #e6e6e6;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 #dialog-message {
@@ -924,6 +970,8 @@ input[type="file"] {
 }
 .submit-button:hover {
   cursor: pointer;
+  background-color: #569e9e;
+  color: #e6e6e6;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 /* TESTIMONIAL SECTION ------------------------------------------------------------------------------------------------------------*/
@@ -964,8 +1012,8 @@ input[type="file"] {
   padding: 2rem;
   background-image: linear-gradient(
     179.2deg,
-    rgba(34, 34, 34, 1) 0%,
-    rgba(8, 0, 153, 1) 29.7%,
+    rgba(34, 34, 34, 0.8) 0%,
+    rgba(8, 0, 153, 0.8) 29.7%,
     rgba(118, 6, 166, 1) 63.4%,
     rgba(233, 0, 64, 0.58) 100.1%
   );
@@ -991,7 +1039,7 @@ input[type="file"] {
     113.3deg,
     rgba(252, 225, 208, 1) 30%,
     rgba(255, 173, 214, 1) 55.7%,
-    rgba(162, 186, 245, 1) 81.8%
+    rgba(162, 186, 245, 0.8) 81.8%
   );
 }
 .testimonial-name {

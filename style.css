@@ -20,6 +20,13 @@
   --h3-size: 30px;
   --p-size: 20px;
 }
+/* HMEDIA QUERY ------------------------------------------------------------------------------------------------------------*/
+/* @media (min-width=601px) {
+  .word-icon {
+    flex-grow: 1;
+  }
+} */
+/* GENERAL HTML ELEMENTS ------------------------------------------------------------------------------------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -71,7 +78,6 @@ a {
   /* background-color: #f3f3f1; */
   background-color: #fff;
 }
-
 .word-icon-wrapper {
   display: flex;
   width: max-content;
